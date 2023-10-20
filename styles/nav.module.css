@@ -1,0 +1,8 @@
+.list {
+  display: flex;
+  gap: 2em;
+}
+
+.list a:hover {
+  color: var(--accent);
+}

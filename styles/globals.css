@@ -58,6 +58,12 @@ h3 {
   font-size: var(--heading3);
 }
 
+/*next/image */
+
+span > img {
+  transition: 0.2s;
+}
+
 /*リセット*/
 
 body,
@@ -82,3 +88,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+h3 {
+  font-size: var(--heading3);
+}
+
+/*リセット*/

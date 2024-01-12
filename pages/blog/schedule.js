@@ -1,6 +1,10 @@
 import { getPostBySlug } from "lib/api";
 import Container from "components/container";
 import PostHeader from "components/post-header";
+import PostBody from "components/post-body";
+import TwoColumn from "components/two-column";
+import ConvertBody from "components/convert-body";
+import PostCategories from "components/post-categories";
 import Image from "next/image";
 
 export default function Schedule({
@@ -26,6 +30,17 @@ export default function Schedule({
             priority
           />
         </figure>
+
+        <TwoColumn>
+          <TwoColumn.Main>
+            <PostBody>
+              <ConvertBody contentHTML={content} />
+            </PostBody>
+          </TwoColumn.Main>
+          <TwoColumn.Sidebar>
+            <PostCategories categories={categories} />
+          </TwoColumn.Sidebar>
+        </TwoColumn>
       </article>
     </Container>
   );

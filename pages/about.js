@@ -3,13 +3,9 @@ import Container from "components/container";
 import Hero from "components/hero";
 import PostBody from "components/post-body";
 import Contact from "@/components/contact";
-import {
-  TwoColumn,
-  TwoColumnMain,
-  TwoColumnSidebar,
-} from "components/two-column";
 import Image from "next/image";
 import eyecatch from "images/about.jpg";
+import TwoColumn from "components/two-column";
 
 export default function About() {
   return (
@@ -33,7 +29,7 @@ export default function About() {
         />
       </figure>{" "}
       <TwoColumn>
-        <TwoColumnMain>
+        <TwoColumn.Main>
           <PostBody>
             <p>
               Cubeが得意とする分野はモノづくりです。 3 次元から2次元の造形、
@@ -63,10 +59,10 @@ export default function About() {
               これからも続けていきたいです。{" "}
             </p>{" "}
           </PostBody>{" "}
-        </TwoColumnMain>{" "}
-        <TwoColumnSidebar>
+        </TwoColumn.Main>{" "}
+        <TwoColumn.Sidebar>
           <Contact />
-        </TwoColumnSidebar>{" "}
+        </TwoColumn.Sidebar>{" "}
       </TwoColumn>{" "}
     </Container>
   );
